@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://project-open-data.github.io/schema/1_0_final/single_entry.json#",
+  "title": "DataCite Dataset Schema",
+  "description": "The metadata format for DataCite compatibility. Validates a single JSON object entry (as opposed to entire Data.json catalog).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "UUID",
+      "type": "string"
+    },
+    "@context": {
+            "title": "Context",
+            "type": "string",
+            "value": "http://schema.org"
+    },
+    "@type": {
+            "title": "ResourceType",
+            "type": "string",
+            "description": "Collection or Dataset",
+            "value": "Dataset"
+    },
+    "@id": {
+            "title": "Identifier",
+            "type": "string",
+            "description": "DOI"
+    },
+    "url": {
+            "title": "URL",
+            "type": "string",
+            "description": "Permanent identifier (URI)"
+    },
+    "name": {
+            "title": "Title",
+            "type": "string",
+            "description": "Title of dataset"
+    },
+    "author": {
+            "title":"Creator",
+            "description": "",
+            "anyOf": [{
+                    "type": "array",
+                    "items": {
+                            "type": "object",
+                            "properties": {
+                                    "@type": {
+                                            "title": "Type",
+                                            "description": "Person"
+                                    },
+                                    "@id": {
+                                            "title": "ORCID",
+                                            "type": "string"
+                                    },
+                                    "name": {
+                                            "title": "Name",
+                                            "type": "string"
+                                    }
+                            }
+                    }
+            }]
+    },
+    "publisher": {
+            "title":"Publisher",
+            "description": "",
+            "type": "object",
+            "properties": {
+                             "@type": {
+                                            "title": "Type",
+                                            "description": "Organisation"
+                                    },
+                              "name": {
+                                            "title": "Name",
+                                            "type": "string"
+                                    }
+                            }
+    },
+    "datePublished": {
+            "title": "PublicationYear",
+            "type": "string"
+    },
+    "description": {
+            "title": "Description",
+            "type": "string"
+    },
+    "keywords": {
+            "title": "Subjects",
+            "type": "string"
+    },
+    "isPartOf": {
+        "title":"relatedIdentifiers",
+        "description": "Identifiers of related resources.",
+        "anyOf": [{
+                "type": "array",
+                "items": {
+                        "type": "object",
+                        "properties": {
+                                "@type": {
+                                        "title": "Type",
+                                        "description": "Related content"
+                                },
+                                "@id": {
+                                        "title": "relatedIdentifier URL",
+                                        "type": "string"
+                                },
+                                "name": {
+                                        "title": "relatedIdentifier Name",
+                                        "type": "string"
+                                }
+                        }
+                }
+        }]
+  }
+  }
+}
