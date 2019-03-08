@@ -1,10 +1,11 @@
-# Open Data Schema Map: DCAT-AP
+# Open Data Schema Map: DataCite
 DKAN Module which provides Schema.org-type Metadata (in JSON-LD format) for DataCite ingest and DOI retrieval.
 
-Schema module to provide endpoints for DCAT-AP, the DCAT Application profile for data portals in Europe. The schema provided is in JSON but includes XML prefixes, and is indended primarily for output to XML/RDF.
+Schema module provide Schema.org endpoints for later import in DataCite. DataCite offers support for schema.org in JSON-LD format to DOI content negotiation. With this module we Schema.org metadata can be embedded using JSON-LD and is intended for further use in generating the DataCite DOI and asociated metedata schema. As presented in this article: Using Schema.org for DOI Registration https://doi.org/10.5438/0000-00cc, we use the DataCite posibility of ingesting different types of file-format in order to bring the DKAN Dateset mapped fields into a DataCite XML Metadata Schema.
 
-Two schemas are actually provided:
 
-DCAT Catalog: Can be used to create an entire data catalog, usually in XML format and exposed at /catalog.xml.
-DCAT Dataset: Schema for providing a single-dataset endpoint
-DKAN's implementation adds meta links in page headers to catalog.xml, and links in each dataset page (as well as header links) to the dataset-specific endpoints.
+
+This schema follows the  machine-readable format of Schema.org and displays single-dataset endpoint.
+
+
+
