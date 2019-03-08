@@ -1,0 +1,8 @@
+name = DataCite Schema
+description = Provides Schema.org-type Metadata (in JSON-LD format) for DataCite ingest and DOI retrieval.
+core = 7.x
+package = Open Data
+dependencies[] = features
+dependencies[] = open_data_schema_map
+dependencies[] = pathauto
+
