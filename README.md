@@ -7,7 +7,7 @@ This schema follows the  machine-readable format of Schema.org and displays sing
 
 ### Instalation:
 
-Copy the downloaded folder of the open_data_schema_datacite submodule in the ODSM/module/ folder structure.
+Clone or download the folder of the open_data_schema_datacite submodule and copy it under the ODSM/module/ folder structure.
 Enable the main Open Data Schema Map module as usual, and enable the "DataCite" schema module we will need to create our API.
 
 ### Create new API:
