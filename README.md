@@ -6,3 +6,13 @@ Schema module provide Schema.org endpoints for later import in DataCite. DataCit
 This schema follows the  machine-readable format of Schema.org and displays single-dataset endpoint. This is a submodule of the main module ODSM (Open Data Schema Map) and has the open_data_schema_ckan module as a model - as recommended in the "Adding new schemas" section of DKAN Documentation (https://docs.getdkan.com/en/latest/components/open-data-schema.html?highlight=odsm).
 
 ### Instalation:
+
+Copy the downloaded folder of the open_data_schema_datacite submodule in the ODSM/module/ folder structure.
+Enable the main Open Data Schema Map module as usual, and enable the "DataCite" schema module we will need to create our API.
+
+### Create new API:
+
+Navigate to admin/config/services/odsm and click "Add API."
+Here we give the API a title, machine name, choose the node entity type and dataset bundle. As endpoint we define a new, custom one: 
+api/3/action/package_show_datacite. Afterwards we check the "Enabled" field and choose the "json-pretty" output format and the "DataCite Dataset" schema.
+
