@@ -15,4 +15,4 @@ Enable the main Open Data Schema Map module as usual, and enable the "DataCite" 
 Navigate to admin/config/services/odsm and click "Add API."
 Here we give the API a title, machine name, choose the node entity type and dataset bundle. As endpoint we define a new, custom one: 
 api/3/action/package_show_datacite. Afterwards we check the "Enabled" field and choose the "json-pretty" output format and the "DataCite Dataset" schema.
-
+![DataCite_API_create](https://user-images.githubusercontent.com/33655561/54113365-6a83b180-43e8-11e9-9be0-c20a4b397f5a.JPG)
