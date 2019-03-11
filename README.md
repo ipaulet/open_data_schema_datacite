@@ -5,4 +5,4 @@ Schema module provide Schema.org endpoints for later import in DataCite. DataCit
 
 This schema follows the  machine-readable format of Schema.org and displays single-dataset endpoint. This is a submodule of the main module ODSM (Open Data Schema Map) and has the open_data_schema_ckan module as a model - as recommended in the "Adding new schemas" section of DKAN Documentation (https://docs.getdkan.com/en/latest/components/open-data-schema.html?highlight=odsm).
 
-###Instalation:
+### Instalation:
